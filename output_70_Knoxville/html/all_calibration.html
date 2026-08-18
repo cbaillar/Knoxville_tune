@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calibration — all</title>
+<style>
+html { font-family: arial black, sans-serif; color: #333333; }
+body { margin: 2em; }
+img  { border: 0; max-width: 100%; }
+a    { text-decoration: none; font-weight: bold; color: #1a5276; }
+a:hover { text-decoration: underline; }
+h1   { margin-bottom: 0.3em; }
+h2   { margin-top: 1.2em; margin-bottom: 0.3em; border-bottom: 2px solid #aaa; padding-bottom: 0.2em; }
+h3   { margin-top: 1em; margin-bottom: 0.3em; color: #444; }
+footer { clear:both; margin-top:2em; padding-top:1em; border-top:1px solid #ccc; color:#999; font-size:0.85em; }
+.back { margin-bottom: 1.5em; }
+.back a { color: gray; font-variant: small-caps; }
+.nav  { margin-bottom: 1.5em; font-size: 0.95em; }
+.nav a { margin-right: 1.2em; }
+.plot { float:left; font-weight:bold; page-break-inside:avoid; margin:0.5em; text-align:center; }
+.plotname { font-size: smaller; display:block; margin-bottom:0.2em; }
+.clear { clear: both; }
+.anasumm { margin: 0.5em 0 1.5em; line-height: 1.5; font-size: 110%; font-family: georgia, palatino, serif; max-width: 860px; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 0.9em; }
+th { background: #2c3e50; color: white; padding: 5px 12px; text-align: left; border: 1px solid #999; }
+td { padding: 4px 12px; border: 1px solid #ccc; font-family: monospace; }
+tr:nth-child(even) td { background: #f5f5f5; }
+</style>
+
+<script type="text/javascript">
+  window.MathJax = { tex: { inlineMath: [['$','$']] },
+                     options: { menuOptions: { settings: { inTabOrder: false } } } };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.min.js">
+</script>
+</head>
+<body>
+<h1>Calibration — all</h1>
+<div class="nav"><a href="index.html">&larrhk; Index</a></div>
+<h3>Posterior Corner Plot</h3>
+<div class="plot"><span class="plotname">calibration_all.png</span><a href="plots/calibration/calibration_all.png"><img src="plots/calibration/calibration_all.png" width="600"></a></div>
+<div class="clear"></div>
+
+<h3>Prior vs Posterior</h3>
+<div class="plot"><span class="plotname">prior_posterior_all_surmise_dynesty.png</span><a href="plots/prior_posterior/prior_posterior_all_surmise_dynesty.png"><img src="plots/prior_posterior/prior_posterior_all_surmise_dynesty.png" width="420"></a></div>
+<div class="clear"></div>
+
+<h3>Posterior Correlation</h3>
+<div class="plot"><span class="plotname">correlation_all_surmise_dynesty.png</span><a href="plots/correlation/correlation_all_surmise_dynesty.png"><img src="plots/correlation/correlation_all_surmise_dynesty.png" width="420"></a></div>
+<div class="clear"></div>
+
+<h3>MAP Parameters</h3>
+<h4>MAP — surmise_dynesty_map_diag.txt</h4><table><tr><th>Parameter</th><th>MAP Value</th></tr><tr><td>pT0Ref</td><td>1.37132255</td></tr><tr><td>ecmPow</td><td>0.13507017</td></tr><tr><td>coreRadius</td><td>0.88901907</td></tr><tr><td>coreFraction</td><td>0.39909511</td></tr><tr><td>CRrange</td><td>6.91977109</td></tr></table><table><tr><th>Field</th><th>Value</th></tr><tr><td>Source</td><td>bilby_posterior</td></tr><tr><td>N samples used</td><td>4034</td></tr><tr><td>Log-prob at MAP</td><td>1644.838083</td></tr><tr><td>Log-evidence</td><td>1633.965899</td></tr><tr><td>Log-evidence err</td><td>0.101840</td></tr></table>
+<h4>MAP — surmise_dynesty_map_full.txt</h4><table><tr><th>Parameter</th><th>MAP Value</th></tr><tr><td>pT0Ref</td><td>1.40863181</td></tr><tr><td>ecmPow</td><td>0.12579994</td></tr><tr><td>coreRadius</td><td>0.90087792</td></tr><tr><td>coreFraction</td><td>0.22676298</td></tr><tr><td>CRrange</td><td>8.94037256</td></tr></table><table><tr><th>Field</th><th>Value</th></tr><tr><td>Source</td><td>bilby_posterior</td></tr><tr><td>N samples used</td><td>3319</td></tr><tr><td>Log-prob at MAP</td><td>2064.978651</td></tr><tr><td>Log-evidence</td><td>2060.552320</td></tr><tr><td>Log-evidence err</td><td>0.063540</td></tr></table>
+<footer><p>Generated at Tuesday, 18. August 2026 11:42AM</p></footer>
+</body>
+</html>

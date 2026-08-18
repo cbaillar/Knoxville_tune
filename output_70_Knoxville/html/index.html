@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bayes_HEP Report</title>
+<style>
+html { font-family: arial black, sans-serif; color: #333333; }
+body { margin: 2em; }
+img  { border: 0; max-width: 100%; }
+a    { text-decoration: none; font-weight: bold; color: #1a5276; }
+a:hover { text-decoration: underline; }
+h1   { margin-bottom: 0.3em; }
+h2   { margin-top: 1.2em; margin-bottom: 0.3em; border-bottom: 2px solid #aaa; padding-bottom: 0.2em; }
+h3   { margin-top: 1em; margin-bottom: 0.3em; color: #444; }
+footer { clear:both; margin-top:2em; padding-top:1em; border-top:1px solid #ccc; color:#999; font-size:0.85em; }
+.back { margin-bottom: 1.5em; }
+.back a { color: gray; font-variant: small-caps; }
+.nav  { margin-bottom: 1.5em; font-size: 0.95em; }
+.nav a { margin-right: 1.2em; }
+.plot { float:left; font-weight:bold; page-break-inside:avoid; margin:0.5em; text-align:center; }
+.plotname { font-size: smaller; display:block; margin-bottom:0.2em; }
+.clear { clear: both; }
+.anasumm { margin: 0.5em 0 1.5em; line-height: 1.5; font-size: 110%; font-family: georgia, palatino, serif; max-width: 860px; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 0.9em; }
+th { background: #2c3e50; color: white; padding: 5px 12px; text-align: left; border: 1px solid #999; }
+td { padding: 4px 12px; border: 1px solid #ccc; font-family: monospace; }
+tr:nth-child(even) td { background: #f5f5f5; }
+</style>
+
+<script type="text/javascript">
+  window.MathJax = { tex: { inlineMath: [['$','$']] },
+                     options: { menuOptions: { settings: { inTabOrder: false } } } };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.min.js">
+</script>
+</head>
+<body>
+<h1>Bayes_HEP Report</h1>
+<h2>Analyses</h2>
+<table><tr><th>System</th><th>Pages</th></tr><tr><td><b>all</b></td><td><a href="all_emulator.html">Emulator</a> &nbsp;|&nbsp; <a href="all_closure.html">Closure</a> &nbsp;|&nbsp; <a href="all_calibration.html">Calibration</a> &nbsp;|&nbsp; <a href="all_results.html">Results</a></td></tr></table>
+<h2>Run Summary</h2>
+<table><tr><th>Field</th><th>Value</th></tr><tr><td>Model</td><td>pythia8</td></tr><tr><td>Collision systems</td><td>all</td></tr><tr><td>Emulators</td><td>surmise</td></tr><tr><td>Samplers</td><td>dynesty</td></tr><tr><td>Training points</td><td>70</td></tr><tr><td>Validation points</td><td>38</td></tr><tr><td>Generated</td><td>Tuesday, 18. August 2026 11:42AM</td></tr></table>
+<h3>Prior Space</h3><table><tr><th>Parameter</th><th>Distribution</th></tr><tr><td>pT0Ref</td><td>Uniform [0.5, 2.5]</td></tr><tr><td>ecmPow</td><td>Uniform [0, 0.25]</td></tr><tr><td>coreRadius</td><td>Uniform [0.1, 1]</td></tr><tr><td>coreFraction</td><td>Uniform [0, 1]</td></tr><tr><td>CRrange</td><td>Uniform [1, 9]</td></tr></table>
+<h3>Observables</h3><table><tr><th>Inspire Key</th><th>Histograms <span style="font-weight:normal;font-size:smaller">(hover for observable label)</span></th><th>#</th><th>Systems</th></tr><tr><td>CDF_2015_I1388868</td><td title="$(1/N_\mathrm{events})\; dN_\mathrm{ch}\,/d\eta\, d\phi$">d01-x01-y01, d02-x01-y01, d03-x01-y01, d04-x01-y01, d05-x01-y01, d06-x01-y01, d07-x01-y01, d08-x01-y01, d09-x01-y01, d10-x01-y01, d11-x01-y01, d12-x01-y01, d13-x01-y01, d14-x01-y01, d15-x01-y01, d16-x01-y01, d17-x01-y01, d18-x01-y01, d19-x01-y01, d20-x01-y01, d21-x01-y01, d22-x01-y01, d23-x01-y01, d24-x01-y01</td><td style="text-align:center">24</td><td>all</td></tr><tr><td>STAR_2006_I709170</td><td title="$1/(2\pi) \, d^2N/(p_\perp dy dp_\perp)$ [GeV$^{-2}$]">d02-x01-y01, d07-x01-y01, d12-x01-y01, d17-x01-y01</td><td style="text-align:center">4</td><td>all</td></tr><tr><td>STAR_2019_I1771348</td><td title="$ \langle \frac{dN_{ch}}{d\eta d\phi} \rangle$">d01-x01-y01, d01-x01-y02, d01-x01-y03, d02-x01-y02, d03-x01-y01, d03-x01-y02, d03-x01-y03, d04-x01-y02</td><td style="text-align:center">8</td><td>all</td></tr><tr><td>STAR_2020_I1783875</td><td title="$1/N_{jets}$">d04-x01-y01, d05-x01-y01, d06-x01-y01, d07-x01-y01, d08-x01-y01, d09-x01-y01, d10-x01-y01, d11-x01-y01, d12-x01-y01, d13-x01-y01, d14-x01-y01, d16-x01-y01, d17-x01-y01, d19-x01-y01, d20-x01-y01, d22-x01-y01, d23-x01-y01, d25-x01-y01, d26-x01-y01, d27-x01-y01, d28-x01-y01, d29-x01-y01, d30-x01-y01, d31-x01-y01, d32-x01-y01, d33-x01-y01, d34-x01-y01, d35-x01-y01, d36-x01-y01, d37-x01-y01</td><td style="text-align:center">30</td><td>all</td></tr><tr><td>STAR_2021_I1853218</td><td title="$1/N dN/dM [c^{2}/GeV]$">d03-x01-y01, d04-x01-y01, d05-x01-y01, d06-x01-y01, d07-x01-y01, d08-x01-y01, d09-x01-y01, d11-x01-y01, d12-x01-y01, d14-x01-y01</td><td style="text-align:center">10</td><td>all</td></tr></table>
+<h3>Discussion</h3><p style="color:#aaa;font-style:italic">Add a <tt>notes.txt</tt> file to the output directory to display run notes here.</p>
+<h3>Design Points</h3><div class="plot"><span class="plotname"></span><a href="plots/Design_Points.png"><img src="plots/Design_Points.png" width="500"></a></div><div class="clear"></div>
+<footer><p>Generated at Tuesday, 18. August 2026 11:42AM</p></footer>
+</body>
+</html>
