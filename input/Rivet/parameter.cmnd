@@ -1,0 +1,16 @@
+! Used for Bayesian Parameterization 
+! These are fixed
+Beams:idA = 2212                    
+Beams:idB = 2212
+PDF:pSet = 17
+MultipartonInteractions:ecmRef = 200
+MultipartonInteractions:bprofile = 2
+HardQCD:all = on                   ! All hard QCD processes are on
+SoftQCD:all = off
+
+! These are tuning parameters
+MultipartonInteractions:pT0Ref          = 1
+MultipartonInteractions:ecmPow          = 1
+MultipartonInteractions:coreRadius      = 1
+MultipartonInteractions:coreFraction    = 1
+ColourReconnection:range                = 1
