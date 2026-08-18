@@ -1,0 +1,17 @@
+RCXX = g++
+
+RCXXFLAGS = -shared -fPIC  -pedantic -Wall -Wunused-variable -Wno-long-long -Wno-format -Werror=uninitialized -Werror=delete-non-virtual-dtor -fopenmp -O2  
+
+RCPPFLAGS = -I/usr/include -I/usr/include/hdf5/serial -I/usr/local/include
+
+RLDFLAGS = -L/usr/local/lib -L/usr/local/lib64 -Wl,--no-as-needed -lfastjet -lfastjetcontribfragile -lfastjetplugins -lfastjettools -lm -lsiscone -lsiscone_spherical  
+
+RLIBS = -lRivet
+
+RUSERFLAGS = 
+
+RivetSTAR_2021_I1853218.so : tmp.UQdtWOtE.o
+	@$(RCXX) $^  $(RCXXFLAGS) $(CXXFLAGS) $(LDFLAGS) $(RLDFLAGS) $(RLIBS) $(LIBS) -o $@ $(RUSERFLAGS)
+
+%.o : %.cc
+	@$(RCXX) $(RCXXFLAGS) $(CXXFLAGS) $(CPPFLAGS) $(RCPPFLAGS) -c -o $@ $^ $(RUSERFLAGS)
