@@ -1,0 +1,15 @@
+MAP Info — all | surmise | dynesty
+============================================================
+Source           : bilby_posterior
+Source path      : /workdir/Knoxville_Project/output_70_Knoxville_full/calibration/surmise/all_results/dynesty_result.json
+N samples used   : 3319
+Log-prob at MAP  : 2064.978651
+Log-evidence     : 2060.552320
+Log-evidence err : 0.063540
+
+MAP Parameters:
+  pT0Ref              : 1.40863181
+  ecmPow              : 0.12579994
+  coreRadius          : 0.90087792
+  coreFraction        : 0.22676298
+  CRrange             : 8.94037256
