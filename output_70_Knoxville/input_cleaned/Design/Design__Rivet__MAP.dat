@@ -1,0 +1,12 @@
+# Version 0.0
+# - Design points to be generated
+# Parameter pT0Ref ecmPow coreRadius coreFraction CRrange
+# - Parameter pT0Ref:       Linear [0.5, 2.5]  
+# - Parameter ecmPow:       Linear [0.0, 0.25]  
+# - Parameter coreRadius:   Linear [0.1, 1.0]     
+# - Parameter coreFraction: Linear [0.0, 1.0]     
+# - Parameter CRrange:      Linear [1.0, 9.0]    
+
+# MAP values = 1
+# Design point indices (row index): 0
+1.368561806134183323e+00 1.359996290770510152e-01 8.943141037786533909e-01 3.857201941719457516e-01 6.894045933007123317e+00
